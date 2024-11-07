@@ -1,9 +1,9 @@
 // Code your design here
-module ifft (xin1,xin2,xin3,xin4,xin5,xin6,xin7,xin8,xin9,xin10,xin11,xin12,xin13,xin14,xin15,xin16,xin17,xin18,xin19,xin20,xin21,xin22,xin23,xin24,xin25,xin26,xin27,xin28,xin29,xin30,xin31,xin32
-						yin1,yin2,yin3,yin4,yin5,yin6,yin7,yin8,yin9,yin10,yin11,yin12,yin13,yin14,yin15,yin16,yin17,yin18,yin19,yin20,yin21,yin22,yin23,yin24,yin25,yin26,yin27, yin28,yin29,yin30,yin31,yin32
+module ifft (xin1,xin2,xin3,xin4,xin5,xin6,xin7,xin8,xin9,xin10,xin11,xin12,xin13,xin14,xin15,xin16,xin17,xin18,xin19,xin20,xin21,xin22,xin23,xin24,xin25,xin26,xin27,xin28,xin29,xin30,xin31,xin32,xin33,xin34,xin35,xin36,xin37,xin38,xin39,xin40,xin41,xin42,xin43,xin44,xin45,xin46,xin47,xin48,xin49,xin50,xin51,xin52,xin53,xin54,xin55,xin56,xin57,xin58,xin59,xin60,xin61,xin62,xin63,xin64
+						yin1,yin2,yin3,yin4,yin5,yin6,yin7,yin8,yin9,yin10,yin11,yin12,yin13,yin14,yin15,yin16,yin17,yin18,yin19,yin20,yin21,yin22,yin23,yin24,yin25,yin26,yin27, yin28,yin29,yin30,yin31,yin32,,yin33,yin34,yin35,yin36,yin37,yin38,yin39,yin40,yin41,yin42,yin43,yin44,yin45,yin46,yin47,yin48,yin49,yin50,yin51,yin52,yin53,yin54,yin55,yin56,yin57,yin58,yin59,yin60,yin61,yin62,yin63,yin64
 								clock,
-								xout1,xout2,xout3,xout4,xout5,xout6,xout7,xout8,xout9,xout10,xout11,xout12,xout13,xout14,xout15,xout16,xout17,xout18,xout19,xout20,xout21,xout22,xout23,xout24,xout25,xout26,xout27,xout28,xout29,xout30,xout31,xout32
-								yout1,yout2,yout3,yout4,yout5,yout6,yout7,yout8,yout9,yout10,yout11,yout12,yout13,yout14,yout15,yout16,yout17,yout18,yout19,yout20,yout21,yout22,yout23,yout24,yout25,yout26,yout27,yout28,yout29,yout30,yout31,yout32);
+								xout1,xout2,xout3,xout4,xout5,xout6,xout7,xout8,xout9,xout10,xout11,xout12,xout13,xout14,xout15,xout16,xout17,xout18,xout19,xout20,xout21,xout22,xout23,xout24,xout25,xout26,xout27,xout28,xout29,xout30,xout31,xout32,xout33,xout34,xout35,xout36,xout37,xout38,xout39,xout40,xout41,xout42,xout43,xout44,xout45,xout46,xout47,xout48,xout49,xout50,xout51,xout52,xout53,xout54,xout55,xout56,xout57,xout58,xout59,xout60,xout61,xout62,xout63,xout64
+								yout1,yout2,yout3,yout4,yout5,yout6,yout7,yout8,yout9,yout10,yout11,yout12,yout13,yout14,yout15,yout16,yout17,yout18,yout19,yout20,yout21,yout22,yout23,yout24,yout25,yout26,yout27,yout28,yout29,yout30,yout31,yout32,,yout33,yout34,yout35,yout36,yout37,yout38,yout39,yout40,yout41,yout42,yout43,yout44,yout45,yout46,yout47,yout48,yout49,yout50,yout51,yout52,yout53,yout54,yout55,yout56,yout57,yout58,yout59,yout60,yout61,yout62,yout63,yout64);
 
     input signed [31:0] xin1;
     input signed [31:0] xin2;
