@@ -1,18 +1,18 @@
 module butterfly(
 	input clock,
-	input signed [31:0] xin1,
-	input signed [31:0] yin1,
-	input signed [31:0] xin2,
-	input signed [31:0] yin2,
-	input signed [31:0] zangle,
-	output signed [31:0] xout1,
-	output signed [31:0] yout1,
-	output signed [31:0] xout2,
-	output signed [31:0] yout2,
+	input signed [63:0] xin1,
+	input signed [63:0] yin1,
+	input signed [63:0] xin2,
+	input signed [63:0] yin2,
+	input signed [63:0] zangle,
+	output signed [63:0] xout1,
+	output signed [63:0] yout1,
+	output signed [63:0] xout2,
+	output signed [63:0] yout2,
 	output done
    );
 
-wire signed [15:0] xtemp1,xtemp2,ytemp1,ytemp2;
+wire signed [63:0] xtemp1,xtemp2,ytemp1,ytemp2;
 wire done1,done2;
 
 assign xtemp1 = xin1+xin2;
