@@ -362,14 +362,14 @@ endgenerate
 generate
 for (i=0;i<4;i=i+1)
 begin: stage_4butterfly
-	butterfly b8(.clock(clock),.xin1(xtemp3[i]),.yin1(ytemp3[i]),.xin2(xtemp3[i+4]),.yin2(ytemp3[i+4]),.zangle(angle_lut[4*i]),.xout1(xtemp4[i]),.yout1(ytemp4[i]),.xout2(xtemp4[i+4]),.yout2(ytemp4[i+4]));
-	butterfly b9(.clock(clock),.xin1(xtemp3[i+8]),.yin1(ytemp3[i+8]),.xin2(xtemp3[i+12]),.yin2(ytemp3[i+12]),.zangle(angle_lut[4*i]),.xout1(xtemp4[i+8]),.yout1(ytemp4[i+8]),.xout2(xtemp4[i+12]),.yout2(ytemp4[i+12]));
-	butterfly b10(.clock(clock),.xin1(xtemp3[i+16]),.yin1(ytemp3[i+16]),.xin2(xtemp3[i+20]),.yin2(ytemp3[i+20]),.zangle(angle_lut[4*i]),.xout1(xtemp4[i+16]),.yout1(ytemp4[i+16]),.xout2(xtemp4[i+20]),.yout2(ytemp4[i+20]));
-	butterfly b11(.clock(clock),.xin1(xtemp3[i+24]),.yin1(ytemp3[i+24]),.xin2(xtemp3[i+28]),.yin2(ytemp3[i+28]),.zangle(angle_lut[4*i]),.xout1(xtemp4[i+24]),.yout1(ytemp4[i+24]),.xout2(xtemp4[i+28]),.yout2(ytemp4[i+28]));
-        butterfly b12(.clock(clock),.xin1(xtemp3[i+32]),.yin1(ytemp3[i+32]),.xin2(xtemp3[i+36]),.yin2(ytemp3[i+36]),.zangle(angle_lut[4*i]),.xout1(xtemp4[i+32]),.yout1(ytemp4[i+32]),.xout2(xtemp4[i+36]),.yout2(ytemp4[i+36]));
-	butterfly b13(.clock(clock),.xin1(xtemp3[i+40]),.yin1(ytemp3[i+40]),.xin2(xtemp3[i+44]),.yin2(ytemp3[i+44]),.zangle(angle_lut[4*i]),.xout1(xtemp4[i+40]),.yout1(ytemp4[i+40]),.xout2(xtemp4[i+44]),.yout2(ytemp4[i+44]));
-	butterfly b14(.clock(clock),.xin1(xtemp3[i+48]),.yin1(ytemp3[i+48]),.xin2(xtemp3[i+52]),.yin2(ytemp3[i+52]),.zangle(angle_lut[4*i]),.xout1(xtemp4[i+48]),.yout1(ytemp4[i+48]),.xout2(xtemp4[i+52]),.yout2(ytemp4[i+52]));
-	butterfly b15(.clock(clock),.xin1(xtemp3[i+56]),.yin1(ytemp3[i+56]),.xin2(xtemp3[i+60]),.yin2(ytemp3[i+60]),.zangle(angle_lut[4*i]),.xout1(xtemp4[i+56]),.yout1(ytemp4[i+56]),.xout2(xtemp4[i+60]),.yout2(ytemp4[i+60]));
+	butterfly b8(.clock(clock),.xin1(xtemp3[i]),.yin1(ytemp3[i]),.xin2(xtemp3[i+4]),.yin2(ytemp3[i+4]),.zangle(angle_lut[8*i]),.xout1(xtemp4[i]),.yout1(ytemp4[i]),.xout2(xtemp4[i+4]),.yout2(ytemp4[i+4]));
+	butterfly b9(.clock(clock),.xin1(xtemp3[i+8]),.yin1(ytemp3[i+8]),.xin2(xtemp3[i+12]),.yin2(ytemp3[i+12]),.zangle(angle_lut[8*i]),.xout1(xtemp4[i+8]),.yout1(ytemp4[i+8]),.xout2(xtemp4[i+12]),.yout2(ytemp4[i+12]));
+	butterfly b10(.clock(clock),.xin1(xtemp3[i+16]),.yin1(ytemp3[i+16]),.xin2(xtemp3[i+20]),.yin2(ytemp3[i+20]),.zangle(angle_lut[8*i]),.xout1(xtemp4[i+16]),.yout1(ytemp4[i+16]),.xout2(xtemp4[i+20]),.yout2(ytemp4[i+20]));
+	butterfly b11(.clock(clock),.xin1(xtemp3[i+24]),.yin1(ytemp3[i+24]),.xin2(xtemp3[i+28]),.yin2(ytemp3[i+28]),.zangle(angle_lut[8*i]),.xout1(xtemp4[i+24]),.yout1(ytemp4[i+24]),.xout2(xtemp4[i+28]),.yout2(ytemp4[i+28]));
+        butterfly b12(.clock(clock),.xin1(xtemp3[i+32]),.yin1(ytemp3[i+32]),.xin2(xtemp3[i+36]),.yin2(ytemp3[i+36]),.zangle(angle_lut[8*i]),.xout1(xtemp4[i+32]),.yout1(ytemp4[i+32]),.xout2(xtemp4[i+36]),.yout2(ytemp4[i+36]));
+	butterfly b13(.clock(clock),.xin1(xtemp3[i+40]),.yin1(ytemp3[i+40]),.xin2(xtemp3[i+44]),.yin2(ytemp3[i+44]),.zangle(angle_lut[8*i]),.xout1(xtemp4[i+40]),.yout1(ytemp4[i+40]),.xout2(xtemp4[i+44]),.yout2(ytemp4[i+44]));
+	butterfly b14(.clock(clock),.xin1(xtemp3[i+48]),.yin1(ytemp3[i+48]),.xin2(xtemp3[i+52]),.yin2(ytemp3[i+52]),.zangle(angle_lut[8*i]),.xout1(xtemp4[i+48]),.yout1(ytemp4[i+48]),.xout2(xtemp4[i+52]),.yout2(ytemp4[i+52]));
+	butterfly b15(.clock(clock),.xin1(xtemp3[i+56]),.yin1(ytemp3[i+56]),.xin2(xtemp3[i+60]),.yin2(ytemp3[i+60]),.zangle(angle_lut[8*i]),.xout1(xtemp4[i+56]),.yout1(ytemp4[i+56]),.xout2(xtemp4[i+60]),.yout2(ytemp4[i+60]));
         
 end
 endgenerate
@@ -378,64 +378,64 @@ generate
 for (i=0;i<2;i=i+1)
 begin: stage_5butterfly
         
-	butterfly b16(.clock(clock),.xin1(xtemp4[i]),.yin1(ytemp4[i]),.xin2(xtemp4[i+2]),.yin2(ytemp4[i+2]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i]),.yout1(ytemp5[i]),.xout2(xtemp5[i+2]),.yout2(ytemp5[i+2]));
-	butterfly b17(.clock(clock),.xin1(xtemp4[i+4]),.yin1(ytemp4[i+4]),.xin2(xtemp4[i+6]),.yin2(ytemp4[i+6]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+4]),.yout1(ytemp5[i+4]),.xout2(xtemp5[i+6]),.yout2(ytemp5[i+6]));
-	butterfly b18(.clock(clock),.xin1(xtemp4[i+8]),.yin1(ytemp4[i+8]),.xin2(xtemp4[i+10]),.yin2(ytemp4[i+10]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+8]),.yout1(ytemp5[i+8]),.xout2(xtemp5[i+10]),.yout2(ytemp5[i+10]));
-        butterfly b19(.clock(clock),.xin1(xtemp4[i+12]),.yin1(ytemp4[i+12]),.xin2(xtemp4[i+14]),.yin2(ytemp4[i+14]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+12]),.yout1(ytemp5[i+12]),.xout2(xtemp5[i+14]),.yout2(ytemp5[i+14]));
-	butterfly b20(.clock(clock),.xin1(xtemp4[i+16]),.yin1(ytemp4[i+16]),.xin2(xtemp4[i+18]),.yin2(ytemp4[i+18]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+16]),.yout1(ytemp5[i+16]),.xout2(xtemp5[i+18]),.yout2(ytemp5[i+18]));
-	butterfly b21(.clock(clock),.xin1(xtemp4[i+20]),.yin1(ytemp4[i+20]),.xin2(xtemp4[i+22]),.yin2(ytemp4[i+22]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+20]),.yout1(ytemp5[i+20]),.xout2(xtemp5[i+22]),.yout2(ytemp5[i+22]));
-	butterfly b22(.clock(clock),.xin1(xtemp4[i+24]),.yin1(ytemp4[i+24]),.xin2(xtemp4[i+26]),.yin2(ytemp4[i+26]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+24]),.yout1(ytemp5[i+24]),.xout2(xtemp5[i+26]),.yout2(ytemp5[i+26]));
-        butterfly b23(.clock(clock),.xin1(xtemp4[i+28]),.yin1(ytemp4[i+28]),.xin2(xtemp4[i+30]),.yin2(ytemp4[i+30]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+28]),.yout1(ytemp5[i+28]),.xout2(xtemp5[i+30]),.yout2(ytemp5[i+30]));
-	butterfly b24(.clock(clock),.xin1(xtemp4[i+32]),.yin1(ytemp4[i+32]),.xin2(xtemp4[i+34]),.yin2(ytemp4[i+34]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+32]),.yout1(ytemp5[i+32]),.xout2(xtemp5[i+34]),.yout2(ytemp5[i+34]));
-	butterfly b25(.clock(clock),.xin1(xtemp4[i+36]),.yin1(ytemp4[i+36]),.xin2(xtemp4[i+38]),.yin2(ytemp4[i+38]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+36]),.yout1(ytemp5[i+36]),.xout2(xtemp5[i+38]),.yout2(ytemp5[i+38]));
-	butterfly b26(.clock(clock),.xin1(xtemp4[i+40]),.yin1(ytemp4[i+40]),.xin2(xtemp4[i+42]),.yin2(ytemp4[i+42]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+40]),.yout1(ytemp5[i+40]),.xout2(xtemp5[i+42]),.yout2(ytemp5[i+42]));
-        butterfly b27(.clock(clock),.xin1(xtemp4[i+44]),.yin1(ytemp4[i+44]),.xin2(xtemp4[i+46]),.yin2(ytemp4[i+46]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+44]),.yout1(ytemp5[i+44]),.xout2(xtemp5[i+46]),.yout2(ytemp5[i+46]));
-	butterfly b28(.clock(clock),.xin1(xtemp4[i+48]),.yin1(ytemp4[i+48]),.xin2(xtemp4[i+50]),.yin2(ytemp4[i+50]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+48]),.yout1(ytemp5[i+48]),.xout2(xtemp5[i+50]),.yout2(ytemp5[i+50]));
-	butterfly b29(.clock(clock),.xin1(xtemp4[i+52]),.yin1(ytemp4[i+52]),.xin2(xtemp4[i+54]),.yin2(ytemp4[i+54]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+52]),.yout1(ytemp5[i+52]),.xout2(xtemp5[i+54]),.yout2(ytemp5[i+54]));
-	butterfly b30(.clock(clock),.xin1(xtemp4[i+56]),.yin1(ytemp4[i+56]),.xin2(xtemp4[i+58]),.yin2(ytemp4[i+58]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+56]),.yout1(ytemp5[i+56]),.xout2(xtemp5[i+58]),.yout2(ytemp5[i+58]));
-        butterfly b31(.clock(clock),.xin1(xtemp4[i+60]),.yin1(ytemp4[i+60]),.xin2(xtemp4[i+62]),.yin2(ytemp4[i+62]),.zangle(angle_lut[4*i]),.xout1(xtemp5[i+60]),.yout1(ytemp5[i+60]),.xout2(xtemp5[i+62]),.yout2(ytemp5[i+62]));
+	butterfly b16(.clock(clock),.xin1(xtemp4[i]),.yin1(ytemp4[i]),.xin2(xtemp4[i+2]),.yin2(ytemp4[i+2]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i]),.yout1(ytemp5[i]),.xout2(xtemp5[i+2]),.yout2(ytemp5[i+2]));
+	butterfly b17(.clock(clock),.xin1(xtemp4[i+4]),.yin1(ytemp4[i+4]),.xin2(xtemp4[i+6]),.yin2(ytemp4[i+6]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+4]),.yout1(ytemp5[i+4]),.xout2(xtemp5[i+6]),.yout2(ytemp5[i+6]));
+	butterfly b18(.clock(clock),.xin1(xtemp4[i+8]),.yin1(ytemp4[i+8]),.xin2(xtemp4[i+10]),.yin2(ytemp4[i+10]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+8]),.yout1(ytemp5[i+8]),.xout2(xtemp5[i+10]),.yout2(ytemp5[i+10]));
+        butterfly b19(.clock(clock),.xin1(xtemp4[i+12]),.yin1(ytemp4[i+12]),.xin2(xtemp4[i+14]),.yin2(ytemp4[i+14]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+12]),.yout1(ytemp5[i+12]),.xout2(xtemp5[i+14]),.yout2(ytemp5[i+14]));
+	butterfly b20(.clock(clock),.xin1(xtemp4[i+16]),.yin1(ytemp4[i+16]),.xin2(xtemp4[i+18]),.yin2(ytemp4[i+18]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+16]),.yout1(ytemp5[i+16]),.xout2(xtemp5[i+18]),.yout2(ytemp5[i+18]));
+	butterfly b21(.clock(clock),.xin1(xtemp4[i+20]),.yin1(ytemp4[i+20]),.xin2(xtemp4[i+22]),.yin2(ytemp4[i+22]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+20]),.yout1(ytemp5[i+20]),.xout2(xtemp5[i+22]),.yout2(ytemp5[i+22]));
+	butterfly b22(.clock(clock),.xin1(xtemp4[i+24]),.yin1(ytemp4[i+24]),.xin2(xtemp4[i+26]),.yin2(ytemp4[i+26]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+24]),.yout1(ytemp5[i+24]),.xout2(xtemp5[i+26]),.yout2(ytemp5[i+26]));
+        butterfly b23(.clock(clock),.xin1(xtemp4[i+28]),.yin1(ytemp4[i+28]),.xin2(xtemp4[i+30]),.yin2(ytemp4[i+30]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+28]),.yout1(ytemp5[i+28]),.xout2(xtemp5[i+30]),.yout2(ytemp5[i+30]));
+	butterfly b24(.clock(clock),.xin1(xtemp4[i+32]),.yin1(ytemp4[i+32]),.xin2(xtemp4[i+34]),.yin2(ytemp4[i+34]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+32]),.yout1(ytemp5[i+32]),.xout2(xtemp5[i+34]),.yout2(ytemp5[i+34]));
+	butterfly b25(.clock(clock),.xin1(xtemp4[i+36]),.yin1(ytemp4[i+36]),.xin2(xtemp4[i+38]),.yin2(ytemp4[i+38]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+36]),.yout1(ytemp5[i+36]),.xout2(xtemp5[i+38]),.yout2(ytemp5[i+38]));
+	butterfly b26(.clock(clock),.xin1(xtemp4[i+40]),.yin1(ytemp4[i+40]),.xin2(xtemp4[i+42]),.yin2(ytemp4[i+42]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+40]),.yout1(ytemp5[i+40]),.xout2(xtemp5[i+42]),.yout2(ytemp5[i+42]));
+        butterfly b27(.clock(clock),.xin1(xtemp4[i+44]),.yin1(ytemp4[i+44]),.xin2(xtemp4[i+46]),.yin2(ytemp4[i+46]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+44]),.yout1(ytemp5[i+44]),.xout2(xtemp5[i+46]),.yout2(ytemp5[i+46]));
+	butterfly b28(.clock(clock),.xin1(xtemp4[i+48]),.yin1(ytemp4[i+48]),.xin2(xtemp4[i+50]),.yin2(ytemp4[i+50]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+48]),.yout1(ytemp5[i+48]),.xout2(xtemp5[i+50]),.yout2(ytemp5[i+50]));
+	butterfly b29(.clock(clock),.xin1(xtemp4[i+52]),.yin1(ytemp4[i+52]),.xin2(xtemp4[i+54]),.yin2(ytemp4[i+54]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+52]),.yout1(ytemp5[i+52]),.xout2(xtemp5[i+54]),.yout2(ytemp5[i+54]));
+	butterfly b30(.clock(clock),.xin1(xtemp4[i+56]),.yin1(ytemp4[i+56]),.xin2(xtemp4[i+58]),.yin2(ytemp4[i+58]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+56]),.yout1(ytemp5[i+56]),.xout2(xtemp5[i+58]),.yout2(ytemp5[i+58]));
+        butterfly b31(.clock(clock),.xin1(xtemp4[i+60]),.yin1(ytemp4[i+60]),.xin2(xtemp4[i+62]),.yin2(ytemp4[i+62]),.zangle(angle_lut[16*i]),.xout1(xtemp5[i+60]),.yout1(ytemp5[i+60]),.xout2(xtemp5[i+62]),.yout2(ytemp5[i+62]));
 end
 endgenerate
 
-butterfly b32(.clock(clock),.xin1(xtemp5[0]),.yin1(ytemp5[0]),.xin2(xtemp5[1]),.yin2(ytemp5[1]),.zangle(angle_lut[0]),.xout1(xtemp_out[0]),.yout1(ytemp_out[0]),.xout2(xtemp_out[1]),.yout2(ytemp_out[1]));
-butterfly b33(.clock(clock),.xin1(xtemp5[2]),.yin1(ytemp5[2]),.xin2(xtemp5[3]),.yin2(ytemp5[3]),.zangle(angle_lut[0]),.xout1(xtemp_out[2]),.yout1(ytemp_out[2]),.xout2(xtemp_out[3]),.yout2(ytemp_out[3]));
-butterfly b34(.clock(clock),.xin1(xtemp5[4]),.yin1(ytemp5[4]),.xin2(xtemp5[5]),.yin2(ytem5[5]),.zangle(angle_lut[0]),.xout1(xtemp_out[4]),.yout1(ytemp_out[4]),.xout2(xtemp_out[5]),.yout2(ytemp_out[5]));
-butterfly b35(.clock(clock),.xin1(xtemp5[6]),.yin1(ytemp5[6]),.xin2(xtemp5[7]),.yin2(ytemp5[7]),.zangle(angle_lut[0]),.xout1(xtemp_out[6]),.yout1(ytemp_out[6]),.xout2(xtemp_out[7]),.yout2(ytemp_out[7]));
+butterfly b32(.clock(clock),.xin1(xtemp5[0]),.yin1(ytemp5[0]),.xin2(xtemp5[1]),.yin2(ytemp5[1]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[0]),.yout1(ytemp_out[0]),.xout2(xtemp_out[1]),.yout2(ytemp_out[1]));
+butterfly b33(.clock(clock),.xin1(xtemp5[2]),.yin1(ytemp5[2]),.xin2(xtemp5[3]),.yin2(ytemp5[3]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[2]),.yout1(ytemp_out[2]),.xout2(xtemp_out[3]),.yout2(ytemp_out[3]));
+butterfly b34(.clock(clock),.xin1(xtemp5[4]),.yin1(ytemp5[4]),.xin2(xtemp5[5]),.yin2(ytem5[5]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[4]),.yout1(ytemp_out[4]),.xout2(xtemp_out[5]),.yout2(ytemp_out[5]));
+butterfly b35(.clock(clock),.xin1(xtemp5[6]),.yin1(ytemp5[6]),.xin2(xtemp5[7]),.yin2(ytemp5[7]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[6]),.yout1(ytemp_out[6]),.xout2(xtemp_out[7]),.yout2(ytemp_out[7]));
 
-butterfly b36(.clock(clock),.xin1(xtemp5[8]),.yin1(ytem5[8]),.xin2(xtemp5[9]),.yin2(ytemp5[9]),.zangle(angle_lut[0]),.xout1(xtemp_out[8]),.yout1(ytemp_out[8]),.xout2(xtemp_out[9]),.yout2(ytemp_out[9]));
-butterfly b37(.clock(clock),.xin1(xtemp5[10]),.yin1(ytemp5[10]),.xin2(xtemp5[11]),.yin2(ytemp5[11]),.zangle(angle_lut[0]),.xout1(xtemp_out[10]),.yout1(ytemp_out[10]),.xout2(xtemp_out[11]),.yout2(ytemp_out[11]));
-butterfly b38(.clock(clock),.xin1(xtemp5[12]),.yin1(ytemp5[12]),.xin2(xtemp5[13]),.yin2(ytemp5[13]),.zangle(angle_lut[0]),.xout1(xtemp_out[12]),.yout1(ytemp_out[12]),.xout2(xtemp_out[13]),.yout2(ytemp_out[13]));
-butterfly b39(.clock(clock),.xin1(xtemp5[14]),.yin1(ytemp5[14]),.xin2(xtemp5[15]),.yin2(ytemp5[15]),.zangle(angle_lut[0]),.xout1(xtemp_out[14]),.yout1(ytemp_out[14]),.xout2(xtemp_out[15]),.yout2(ytemp_out[15]));
+butterfly b36(.clock(clock),.xin1(xtemp5[8]),.yin1(ytem5[8]),.xin2(xtemp5[9]),.yin2(ytemp5[9]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[8]),.yout1(ytemp_out[8]),.xout2(xtemp_out[9]),.yout2(ytemp_out[9]));
+butterfly b37(.clock(clock),.xin1(xtemp5[10]),.yin1(ytemp5[10]),.xin2(xtemp5[11]),.yin2(ytemp5[11]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[10]),.yout1(ytemp_out[10]),.xout2(xtemp_out[11]),.yout2(ytemp_out[11]));
+butterfly b38(.clock(clock),.xin1(xtemp5[12]),.yin1(ytemp5[12]),.xin2(xtemp5[13]),.yin2(ytemp5[13]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[12]),.yout1(ytemp_out[12]),.xout2(xtemp_out[13]),.yout2(ytemp_out[13]));
+butterfly b39(.clock(clock),.xin1(xtemp5[14]),.yin1(ytemp5[14]),.xin2(xtemp5[15]),.yin2(ytemp5[15]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[14]),.yout1(ytemp_out[14]),.xout2(xtemp_out[15]),.yout2(ytemp_out[15]));
 
-butterfly b40(.clock(clock),.xin1(xtemp5[16]),.yin1(ytemp5[16]),.xin2(xtemp5[17]),.yin2(ytemp5[17]),.zangle(angle_lut[0]),.xout1(xtemp_out[0]),.yout1(ytemp_out[0]),.xout2(xtemp_out[1]),.yout2(ytemp_out[1]));
-butterfly b41(.clock(clock),.xin1(xtemp5[18]),.yin1(ytemp5[18]),.xin2(xtemp5[19]),.yin2(ytemp5[19]),.zangle(angle_lut[0]),.xout1(xtemp_out[2]),.yout1(ytemp_out[2]),.xout2(xtemp_out[3]),.yout2(ytemp_out[3]));
-butterfly b42(.clock(clock),.xin1(xtemp5[20]),.yin1(ytemp5[20]),.xin2(xtemp5[21]),.yin2(ytemp5[21]),.zangle(angle_lut[0]),.xout1(xtemp_out[4]),.yout1(ytemp_out[4]),.xout2(xtemp_out[5]),.yout2(ytemp_out[5]));
-butterfly b43(.clock(clock),.xin1(xtemp5[22]),.yin1(ytemp5[22]),.xin2(xtemp5[23]),.yin2(ytemp5[23]),.zangle(angle_lut[0]),.xout1(xtemp_out[6]),.yout1(ytemp_out[6]),.xout2(xtemp_out[7]),.yout2(ytemp_out[7]));
+butterfly b40(.clock(clock),.xin1(xtemp5[16]),.yin1(ytemp5[16]),.xin2(xtemp5[17]),.yin2(ytemp5[17]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[0]),.yout1(ytemp_out[0]),.xout2(xtemp_out[1]),.yout2(ytemp_out[1]));
+butterfly b41(.clock(clock),.xin1(xtemp5[18]),.yin1(ytemp5[18]),.xin2(xtemp5[19]),.yin2(ytemp5[19]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[2]),.yout1(ytemp_out[2]),.xout2(xtemp_out[3]),.yout2(ytemp_out[3]));
+butterfly b42(.clock(clock),.xin1(xtemp5[20]),.yin1(ytemp5[20]),.xin2(xtemp5[21]),.yin2(ytemp5[21]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[4]),.yout1(ytemp_out[4]),.xout2(xtemp_out[5]),.yout2(ytemp_out[5]));
+butterfly b43(.clock(clock),.xin1(xtemp5[22]),.yin1(ytemp5[22]),.xin2(xtemp5[23]),.yin2(ytemp5[23]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[6]),.yout1(ytemp_out[6]),.xout2(xtemp_out[7]),.yout2(ytemp_out[7]));
 
-butterfly b44(.clock(clock),.xin1(xtemp5[24]),.yin1(ytemp5[24]),.xin2(xtemp5[25]),.yin2(ytemp5[25]),.zangle(angle_lut[0]),.xout1(xtemp_out[8]),.yout1(ytemp_out[8]),.xout2(xtemp_out[9]),.yout2(ytemp_out[9]));
-butterfly b45(.clock(clock),.xin1(xtemp5[26]),.yin1(ytemp5[26]),.xin2(xtemp5[27]),.yin2(ytemp5[27]),.zangle(angle_lut[0]),.xout1(xtemp_out[10]),.yout1(ytemp_out[10]),.xout2(xtemp_out[11]),.yout2(ytemp_out[11]));
-butterfly b46(.clock(clock),.xin1(xtemp5[28]),.yin1(ytemp5[28]),.xin2(xtemp5[29]),.yin2(ytemp5[29]),.zangle(angle_lut[0]),.xout1(xtemp_out[12]),.yout1(ytemp_out[12]),.xout2(xtemp_out[13]),.yout2(ytemp_out[13]));
-butterfly b47(.clock(clock),.xin1(xtemp5[30]),.yin1(ytemp5[30]),.xin2(xtemp5[31]),.yin2(ytemp5[31]),.zangle(angle_lut[0]),.xout1(xtemp_out[14]),.yout1(ytemp_out[14]),.xout2(xtemp_out[15]),.yout2(ytemp_out[15]));
+butterfly b44(.clock(clock),.xin1(xtemp5[24]),.yin1(ytemp5[24]),.xin2(xtemp5[25]),.yin2(ytemp5[25]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[8]),.yout1(ytemp_out[8]),.xout2(xtemp_out[9]),.yout2(ytemp_out[9]));
+butterfly b45(.clock(clock),.xin1(xtemp5[26]),.yin1(ytemp5[26]),.xin2(xtemp5[27]),.yin2(ytemp5[27]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[10]),.yout1(ytemp_out[10]),.xout2(xtemp_out[11]),.yout2(ytemp_out[11]));
+butterfly b46(.clock(clock),.xin1(xtemp5[28]),.yin1(ytemp5[28]),.xin2(xtemp5[29]),.yin2(ytemp5[29]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[12]),.yout1(ytemp_out[12]),.xout2(xtemp_out[13]),.yout2(ytemp_out[13]));
+butterfly b47(.clock(clock),.xin1(xtemp5[30]),.yin1(ytemp5[30]),.xin2(xtemp5[31]),.yin2(ytemp5[31]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[14]),.yout1(ytemp_out[14]),.xout2(xtemp_out[15]),.yout2(ytemp_out[15]));
 
-butterfly b48(.clock(clock),.xin1(xtemp5[32]),.yin1(ytemp5[32]),.xin2(xtemp5[33]),.yin2(ytemp5[33]),.zangle(angle_lut[0]),.xout1(xtemp_out[0]),.yout1(ytemp_out[0]),.xout2(xtemp_out[1]),.yout2(ytemp_out[1]));
-butterfly b49(.clock(clock),.xin1(xtemp5[34]),.yin1(ytemp5[34]),.xin2(xtemp35[35]),.yin2(ytemp5[35]),.zangle(angle_lut[0]),.xout1(xtemp_out[2]),.yout1(ytemp_out[2]),.xout2(xtemp_out[3]),.yout2(ytemp_out[3]));
-butterfly b50(.clock(clock),.xin1(xtemp5[36]),.yin1(ytemp5[36]),.xin2(xtemp5[37]),.yin2(ytemp5[37]),.zangle(angle_lut[0]),.xout1(xtemp_out[4]),.yout1(ytemp_out[4]),.xout2(xtemp_out[5]),.yout2(ytemp_out[5]));
-butterfly b51(.clock(clock),.xin1(xtemp5[38]),.yin1(ytemp5[38]),.xin2(xtemp5[39]),.yin2(ytemp5[39]),.zangle(angle_lut[0]),.xout1(xtemp_out[6]),.yout1(ytemp_out[6]),.xout2(xtemp_out[7]),.yout2(ytemp_out[7]));
+butterfly b48(.clock(clock),.xin1(xtemp5[32]),.yin1(ytemp5[32]),.xin2(xtemp5[33]),.yin2(ytemp5[33]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[0]),.yout1(ytemp_out[0]),.xout2(xtemp_out[1]),.yout2(ytemp_out[1]));
+butterfly b49(.clock(clock),.xin1(xtemp5[34]),.yin1(ytemp5[34]),.xin2(xtemp35[35]),.yin2(ytemp5[35]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[2]),.yout1(ytemp_out[2]),.xout2(xtemp_out[3]),.yout2(ytemp_out[3]));
+butterfly b50(.clock(clock),.xin1(xtemp5[36]),.yin1(ytemp5[36]),.xin2(xtemp5[37]),.yin2(ytemp5[37]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[4]),.yout1(ytemp_out[4]),.xout2(xtemp_out[5]),.yout2(ytemp_out[5]));
+butterfly b51(.clock(clock),.xin1(xtemp5[38]),.yin1(ytemp5[38]),.xin2(xtemp5[39]),.yin2(ytemp5[39]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[6]),.yout1(ytemp_out[6]),.xout2(xtemp_out[7]),.yout2(ytemp_out[7]));
 
-butterfly b52(.clock(clock),.xin1(xtemp5[40]),.yin1(ytemp5[40]),.xin2(xtemp5[41]),.yin2(ytemp5[41]),.zangle(angle_lut[0]),.xout1(xtemp_out[8]),.yout1(ytemp_out[8]),.xout2(xtemp_out[9]),.yout2(ytemp_out[9]));
-butterfly b53(.clock(clock),.xin1(xtemp5[42]),.yin1(ytemp5[42]),.xin2(xtemp5[43]),.yin2(ytemp5[43]),.zangle(angle_lut[0]),.xout1(xtemp_out[10]),.yout1(ytemp_out[10]),.xout2(xtemp_out[11]),.yout2(ytemp_out[11]));
-butterfly b54(.clock(clock),.xin1(xtemp5[44]),.yin1(ytemp5[44]),.xin2(xtemp5[45]),.yin2(ytemp5[45]),.zangle(angle_lut[0]),.xout1(xtemp_out[12]),.yout1(ytemp_out[12]),.xout2(xtemp_out[13]),.yout2(ytemp_out[13]));
-butterfly b55(.clock(clock),.xin1(xtemp5[46]),.yin1(ytemp5[46]),.xin2(xtemp5[47]),.yin2(ytemp5[47]),.zangle(angle_lut[0]),.xout1(xtemp_out[14]),.yout1(ytemp_out[14]),.xout2(xtemp_out[15]),.yout2(ytemp_out[15]));
+butterfly b52(.clock(clock),.xin1(xtemp5[40]),.yin1(ytemp5[40]),.xin2(xtemp5[41]),.yin2(ytemp5[41]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[8]),.yout1(ytemp_out[8]),.xout2(xtemp_out[9]),.yout2(ytemp_out[9]));
+butterfly b53(.clock(clock),.xin1(xtemp5[42]),.yin1(ytemp5[42]),.xin2(xtemp5[43]),.yin2(ytemp5[43]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[10]),.yout1(ytemp_out[10]),.xout2(xtemp_out[11]),.yout2(ytemp_out[11]));
+butterfly b54(.clock(clock),.xin1(xtemp5[44]),.yin1(ytemp5[44]),.xin2(xtemp5[45]),.yin2(ytemp5[45]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[12]),.yout1(ytemp_out[12]),.xout2(xtemp_out[13]),.yout2(ytemp_out[13]));
+butterfly b55(.clock(clock),.xin1(xtemp5[46]),.yin1(ytemp5[46]),.xin2(xtemp5[47]),.yin2(ytemp5[47]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[14]),.yout1(ytemp_out[14]),.xout2(xtemp_out[15]),.yout2(ytemp_out[15]));
 
-butterfly b56(.clock(clock),.xin1(xtemp5[48]),.yin1(ytemp5[48]),.xin2(xtemp[49]),.yin2(ytemp5[49]),.zangle(angle_lut[0]),.xout1(xtemp_out[0]),.yout1(ytemp_out[0]),.xout2(xtemp_out[1]),.yout2(ytemp_out[1]));
-butterfly b57(.clock(clock),.xin1(xtemp5[50]),.yin1(ytemp5[50]),.xin2(xtemp5[51]),.yin2(ytemp5[51]),.zangle(angle_lut[0]),.xout1(xtemp_out[2]),.yout1(ytemp_out[2]),.xout2(xtemp_out[3]),.yout2(ytemp_out[3]));
-butterfly b58(.clock(clock),.xin1(xtemp5[52]),.yin1(ytemp5[52]),.xin2(xtemp5[53]),.yin2(ytemp5[53]),.zangle(angle_lut[0]),.xout1(xtemp_out[4]),.yout1(ytemp_out[4]),.xout2(xtemp_out[5]),.yout2(ytemp_out[5]));
-butterfly b59(.clock(clock),.xin1(xtemp5[54]),.yin1(ytemp5[54]),.xin2(xtemp5[55]),.yin2(ytemp5[55]),.zangle(angle_lut[0]),.xout1(xtemp_out[6]),.yout1(ytemp_out[6]),.xout2(xtemp_out[7]),.yout2(ytemp_out[7]));
+butterfly b56(.clock(clock),.xin1(xtemp5[48]),.yin1(ytemp5[48]),.xin2(xtemp[49]),.yin2(ytemp5[49]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[0]),.yout1(ytemp_out[0]),.xout2(xtemp_out[1]),.yout2(ytemp_out[1]));
+butterfly b57(.clock(clock),.xin1(xtemp5[50]),.yin1(ytemp5[50]),.xin2(xtemp5[51]),.yin2(ytemp5[51]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[2]),.yout1(ytemp_out[2]),.xout2(xtemp_out[3]),.yout2(ytemp_out[3]));
+butterfly b58(.clock(clock),.xin1(xtemp5[52]),.yin1(ytemp5[52]),.xin2(xtemp5[53]),.yin2(ytemp5[53]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[4]),.yout1(ytemp_out[4]),.xout2(xtemp_out[5]),.yout2(ytemp_out[5]));
+butterfly b59(.clock(clock),.xin1(xtemp5[54]),.yin1(ytemp5[54]),.xin2(xtemp5[55]),.yin2(ytemp5[55]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[6]),.yout1(ytemp_out[6]),.xout2(xtemp_out[7]),.yout2(ytemp_out[7]));
 
-butterfly b60(.clock(clock),.xin1(xtemp5[56]),.yin1(ytemp5[56]),.xin2(xtemp5[57]),.yin2(ytemp5[57]),.zangle(angle_lut[0]),.xout1(xtemp_out[8]),.yout1(ytemp_out[8]),.xout2(xtemp_out[9]),.yout2(ytemp_out[9]));
-butterfly b61(.clock(clock),.xin1(xtemp5[58]),.yin1(ytemp5[58]),.xin2(xtemp5[59]),.yin2(ytemmp[59]),.zangle(angle_lut[0]),.xout1(xtemp_out[10]),.yout1(ytemp_out[10]),.xout2(xtemp_out[11]),.yout2(ytemp_out[11]));
-butterfly b62(.clock(clock),.xin1(xtemp5[60]),.yin1(ytemp5[60]),.xin2(xtemp5[61]),.yin2(ytemp5[61]),.zangle(angle_lut[0]),.xout1(xtemp_out[12]),.yout1(ytemp_out[12]),.xout2(xtemp_out[13]),.yout2(ytemp_out[13]));
-butterfly b63(.clock(clock),.xin1(xtemp5[62]),.yin1(ytemp5[62]),.xin2(xtemp5[63]),.yin2(ytemp5[63]),.zangle(angle_lut[0]),.xout1(xtemp_out[14]),.yout1(ytemp_out[14]),.xout2(xtemp_out[15]),.yout2(ytemp_out[15]));
+butterfly b60(.clock(clock),.xin1(xtemp5[56]),.yin1(ytemp5[56]),.xin2(xtemp5[57]),.yin2(ytemp5[57]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[8]),.yout1(ytemp_out[8]),.xout2(xtemp_out[9]),.yout2(ytemp_out[9]));
+butterfly b61(.clock(clock),.xin1(xtemp5[58]),.yin1(ytemp5[58]),.xin2(xtemp5[59]),.yin2(ytemmp[59]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[10]),.yout1(ytemp_out[10]),.xout2(xtemp_out[11]),.yout2(ytemp_out[11]));
+butterfly b62(.clock(clock),.xin1(xtemp5[60]),.yin1(ytemp5[60]),.xin2(xtemp5[61]),.yin2(ytemp5[61]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[12]),.yout1(ytemp_out[12]),.xout2(xtemp_out[13]),.yout2(ytemp_out[13]));
+butterfly b63(.clock(clock),.xin1(xtemp5[62]),.yin1(ytemp5[62]),.xin2(xtemp5[63]),.yin2(ytemp5[63]),.zangle(angle_lut[32*i]),.xout1(xtemp_out[14]),.yout1(ytemp_out[14]),.xout2(xtemp_out[15]),.yout2(ytemp_out[15]));
 
 assign {xout1,xout2,xout3,xout4,xout5,xout6,xout7,xout8,xout9,xout10,xout11,xout12,xout13,xout14,xout15,xout16,xout17,xout18,xout19,xout20,xout21,xout22,xout23,xout24,xout25,xout26,xout27,xout28,xout29,xout30,xout31,xout32,xout33,xout34,xout35,xout36,xout37,xout38,xout39,xout40,xout41,xout42,xout43,xout44,xout45,xout46,xout47,xout48,xout49,xout50,xout51,xout52,xout53,xout54,xout55,xout56,xout57,xout58,xout59,xout60,xout61,xout62,xout63,xout64} = {xtemp_out[0]>>>4,xtemp_out[8]>>>4,xtemp_out[4]>>>4,xtemp_out[12]>>>4,xtemp_out[2]>>>4,xtemp_out[10]>>>4,xtemp_out[6]>>>4,xtemp_out[14]>>>4,xtemp_out[1]>>>4,xtemp_out[9]>>>4,xtemp_out[5]>>>4,xtemp_out[13]>>>4,xtemp_out[3]>>>4,xtemp_out[11]>>>4,xtemp_out[7]>>>4,xtemp_out[15]>>>4};
 assign {yout1,yout2,yout3,yout4,yout5,yout6,yout7,yout8,yout9,yout10,yout11,yout12,yout13,yout14,yout15,yout16,yout17,yout18,yout19,yout20,yout21,yout22,yout23,yout24,yout25,yout26,yout27,yout28,yout29,yout30,yout31,yout32,yout33,yout34,yout35,yout36,yout37,yout38,yout39,yout40,yout41,yout42,yout43,yout44,yout45,yout46,yout47,yout48,yout49,yout50,yout51,yout52,yout53,yout54,yout55,yout56,yout57,xout58,yout59,yout60,yout61,yout62,yout63,yout64} = {ytemp_out[0]>>>4,ytemp_out[8]>>>4,ytemp_out[4]>>>4,ytemp_out[12]>>>4,ytemp_out[2]>>>4,ytemp_out[10]>>>4,ytemp_out[6]>>>4,ytemp_out[14]>>>4,ytemp_out[1]>>>4,ytemp_out[9]>>>4,ytemp_out[5]>>>4,ytemp_out[13]>>>4,ytemp_out[3]>>>4,ytemp_out[11]>>>4,ytemp_out[7]>>>4,ytemp_out[15]>>>4};
